@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   post 'signin', controller: :sign_in, action: :create
   post 'signup', controller: :sign_up, action: :create
   delete 'signin', controller: :sign_in, action: :destroy
+
+  namespace :admin do
+    resources :users, only: [:index, :show]
+  end
 end

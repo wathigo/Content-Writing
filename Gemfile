@@ -16,6 +16,7 @@ gem 'puma', '~> 4.1'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.13'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'active_model_serializers'
 
 gem 'jwt_sessions',  '~> 2.1.0'
 

@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe SignInController, type: :controller do
 
     describe 'POST #create' do
-      let(:password) { 'password' }
-      let(:user) { create(:user) }
+      let(:password) { 'MyString' }
+      let(:user) { FactoryBot.create(:user) }
       let(:user_params) { { email: user.email, password: password } }
   
       it 'returns http success' do
